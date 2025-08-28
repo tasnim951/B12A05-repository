@@ -79,8 +79,9 @@ let copyButtons =
 let record = document.createElement('div');
 record.className = "border-b py-1"; 
 record.innerHTML = `
-     <div style= "display: flex;
-     justify-content:space-between;">
+     <div style =
+             "display:flex;
+             justify-content:space-between;">
         <b>${name}</b>
         <span>${time}</span>
         </div>

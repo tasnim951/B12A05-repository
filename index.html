@@ -13,13 +13,14 @@
 </head>
 <body class="bg-[#f5fff6] min-h-screen">
     <!-- Navbar -->
-<div class="navbar bg-white shadow px-4">
-    <div class="flex flex-1 gap-2 items-center">
+<div class="navbar bg-white shadow px-4 flex-col sm:flex-row gap-3 sm:gap-0">
+    
+    <div class="flex flex-1 gap-2 items-center justify-center sm:justify-start">
 <img src="assets/logo.png" alt="Logo" class="w-7 h-7 mr-2">
-       <span class="text-[#006747] font-bold">Emergency <br>Service</span>
+       <span class="text-[#006747]  font-bold">Emergency <br>Service</span>
     </div>
 
-<div class="flex gap-4">
+<div class="flex flex-wrap justify-center sm:justify-end gap-4">
 
     <span class=" bg-[#41FF6B1A] rounded-full flex px-5 items-center gap-2">
         <span id="heartCount" class="font-bold">0</span>
@@ -52,8 +53,9 @@
 </div>
 </div>
 <!-- Card section -->
- <div class="flex">
-<section  class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 flex-1 my-7 mx-5">
+<div class="flex flex-col lg:flex-row lg:gap-6">
+
+<section  class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 flex-1 my-7 mx-5 lg:mx-0">
 <!------ c-1 ------>
 <div class="card bg-base-100 shadow">
     <div class="card-body">
@@ -61,7 +63,7 @@
           <img src="assets/emergency.png" alt="" class="w-7 h-7 bg-[#ffe3e2] rounded-lg">
           <i class="fa-regular fa-heart cursor-pointer"></i>
         </div>
-        <h2 class="font-bold">National Emergency Number</h2>
+        <h2 class="font-bold ">National Emergency Number</h2>
         <p>National Emergency</p>
         <p class="font-bold">999</p>
         <span class="rounded-xl w-6 text-center bg-[#d4d6d5]">All</span>
@@ -297,7 +299,7 @@
  
 <!-- call history section -->
 
-<section class="w-64 my-7 mx-7">
+<section class="w-full lg:w-80 mx-0  lg:mx-7 my-7">
 <div class="card bg-base-100 shadow p-4 h-full">
 <div class=" flex justify-between items-center mb-4">
 <span>
@@ -307,14 +309,15 @@
      <button id="clearHistory" class="btn  bg-[#00A63E] rounded-full text-white">Clear</button>
 </div>
      <!-- call history list section -->
-         <div id="historyList">
-            
+         <div id="historyList" class="mt-3 max-h-80 overflow-y-auto">
+
          </div>
 
 
 
 </div>
 </section>
+</div>
 <!-- JS -->
 <script src="script.js"></script>
 </body>
